@@ -1,0 +1,2 @@
+# Startup
+TradeWise (Nombre provisional)
