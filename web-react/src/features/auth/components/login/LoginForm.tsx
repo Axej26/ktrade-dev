@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './login.css';
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
-import { auth, facebookProvider, googleProvider } from '../../../../firebase/firebase.config';
+import { auth, googleProvider } from '../../../../firebase/firebase.config';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
@@ -48,17 +48,10 @@ export default function LoginForm() {
     }
   };
 
-  const loginWithFacebook = async () => {
-    try {
-      await signInWithPopup(auth, facebookProvider);
-      alert('Inicio con Facebook exitoso');
-    } catch (error: any) {
-      alert('Error con Facebook: ' + error.message);
-    }
-  };
-
   return (
     <div className="login-card">
+
+
       <h1>Iniciar Sesión</h1>
 
       <form onSubmit={handleSubmit}>
@@ -84,7 +77,6 @@ export default function LoginForm() {
       <div className="social-login">
         <p>O continúa con</p>
         <button className="google-btn" onClick={loginWithGoogle}>Google</button>
-        <button className="facebook-btn" onClick={loginWithFacebook}>Facebook</button>
       </div>
 
       <div className="links">

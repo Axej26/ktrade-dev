@@ -1,0 +1,23 @@
+.branding-container {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  width: 100%;
+  color: #1e293b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.project-name .highlight {
+  color: #3b82f6;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #475569;
+  margin-top: 4px;
+}
