@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 import { signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider } from '../../../../firebase/firebase.config';
+//corregir la ruta import { login } from '../services/authService'; 
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
+  const navigate = useNavigate(); 
 
   const validate = () => {
     const newErrors: { email?: string; password?: string } = {};
@@ -33,12 +35,23 @@ export default function LoginForm() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       alert('Inicio de sesión exitoso');
-      // Aquí puedes redirigir a otra página
+      navigate('/dashboard');
     } catch (error: any) {
       alert('Error al iniciar sesión: ' + error.message);
     }
   };
-
+  /*const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  try {
+    const userData = await login(email, password);
+    // userData contiene { uid, email, token }
+    localStorage.setItem('token', userData.token);
+    navigate('/dashboard');
+  } catch (error) {
+    // Manejo de errores
+  }
+};*/
+//coregir el authService junto con la ruta
   const loginWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
