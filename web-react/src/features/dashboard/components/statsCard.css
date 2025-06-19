@@ -1,0 +1,23 @@
+/* Card.css */
+
+.custom-card {
+  background-color: #ffffff;         /* Fondo */
+  padding: 20px;                     /* Espaciado interno */
+  border-radius: 10px;               /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.card-title {
+  color: #4b5563;
+  font-size: 1rem;      /* Tamaño del título */
+  font-weight: 600;     /* Semibold */
+  margin-bottom: 0.5rem;
+}
+
+.card-value {
+  font-size: 1.5rem;    /* Valor grande */
+  font-weight: bold;
+  color: #1f2937;       /* Texto*/
+}
+
+
