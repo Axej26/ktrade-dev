@@ -1,5 +1,5 @@
 // DashboardPage.tsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Sidebar from '../components/sidebar';
 import Header from '../components/header';
 import Card from '../components/statsCard';
