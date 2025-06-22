@@ -1,0 +1,12 @@
+/* Main con espacio y scroll si es necesario */
+.dashboard-main {
+  flex-grow: 1;
+  padding: 1.5rem;
+  overflow: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 24px; /* Espaciado entre tarjetas */
+}

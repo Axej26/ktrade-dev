@@ -1,0 +1,43 @@
+/* Contenedor principal del header */
+header {
+  /* Layout principal */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Estilos visuales */
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+
+  /* Posición fija */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Título principal */
+header h1 {
+  /* Tamaño y estilo de texto */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Avatar o ícono a la derecha */
+header div {
+  /* Tamaño y forma */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+
+  /* Estilos visuales */
+  background-color: #e2e8f0;
+  color: #4a5568;
+  font-weight: 600;
+
+  /* Alineación de contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

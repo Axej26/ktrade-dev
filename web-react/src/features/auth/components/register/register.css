@@ -1,0 +1,158 @@
+.branding-container {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  width: 100%;
+  color: #1e293b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.project-name .highlight {
+  color: #3b82f6;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.login-card h1 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1e293b;
+  text-align: center;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-card input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.login-card button {
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #2563eb;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.social-login p {
+  margin-bottom: 12px;
+  color: #64748b;
+}
+
+.google-btn,
+.facebook-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+.google-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.facebook-btn {
+  background-color: #1877f2;
+  color: white;
+}
+
+.facebook-btn:hover {
+  background-color: #155dbb;
+}
+
+.links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.links a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.login-card label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: -12px;
+  color: #334155;
+}
